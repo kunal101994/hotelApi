@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // req.body
 const passport = require('./auth.js');
 
+<<<<<<< HEAD
 
 //Middleware function
 const logRequest = (req, res, next) => {
@@ -19,6 +20,9 @@ app.use(passport.initialize());
 const localAuthMiddleware = passport.authenticate('local', {session: false})
 
 app.get('/',(req, res) => {
+=======
+app.get('/', (req, res) => {
+>>>>>>> 62ca0dd0b2f2659c4e718188f5a3064beb5fa356
     res.send("<h1>Welcome to out Hotel</h1>")
 })
 
