@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // req.body
 
 app.get('/', (req, res) => {
-    res.send("Welcome to out Hotel")
+    res.send("<h1>Welcome to out Hotel</h1>")
 })
 
 
