@@ -28,9 +28,17 @@ address: {
 salary: {
     type: Number,
     required: true
+},
+username: {
+    type: String,
+    required: true
+},
+password: {
+    typs: String,
+    required: true
 }
 },
-{timestamps:true})
+{timestamps:true});
 
 
 const Person = mongoose.model('Person', personSchema);

@@ -11,7 +11,6 @@ router.post('/', async (req, res) => {
         const response = await newMenuItem.save();
         console.log('MenuItem data saved');
         res.status(200).json({message: "MenuItem created successfully", data:response });
-        
     } catch (error) {
         console.log(error);
         res.status(500).json({error: "Server is not working"});
